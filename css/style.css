@@ -1,0 +1,468 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Helvetica;
+    scroll-behavior: smooth;
+}
+
+:root{
+    background: linear-gradient(0deg, #52c4d3, #df6666);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-body{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    letter-spacing: 3px;
+}
+
+
+.about-me, .about-me p, .header-nav{
+    padding: 40px;
+}
+
+.about-me h1{
+    padding: 40px;
+    font-size: 100px;
+    font-family: 'Pinyon Script', 'Dancing Script', cursive;
+}
+
+.about-me p{
+    line-height: 30px;
+    margin: 0 150px;
+}
+
+
+.header-nav{
+    display: flex;
+    margin: -40px 200px 0 200px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 10%;
+}
+
+.header-nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: text-shadow 0.5s;
+}
+
+.header-nav span{
+    font-size: 60px;
+    transform: translateY(-5%);
+}
+
+.header-nav a:hover{
+    text-shadow: 3px 3px 2px rgb(92, 92, 92);
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.language span{
+    padding-right: 20px;
+}
+
+.language i{
+    padding: 5px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social span{
+    padding-right: 20px;
+}
+
+.social-links a{
+    color: black;
+    padding: 5px;
+    transition: text-shadow 0.5s;
+}
+
+.social-links a:hover{
+    text-shadow: 2px 2px 2px #fff;
+}
+
+#project-page{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.project-showcase{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    padding: 0 20px 0 0;
+}
+
+.project1{
+    background-image: url(/Image/ezgif.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin: auto;
+    height: 60%;
+    padding: 50px;
+    margin-right: 10px;
+}
+
+
+.project1-info{
+    width:100%;
+    margin: auto;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.project1-info p{
+    padding-bottom: 30px;
+}
+
+.project1-info i{
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.project1-info a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: background 0.5s;
+}
+
+.project1-info a:hover{
+    background-color: grey;
+    color: white;
+}
+
+.project1:hover .project1-info{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.project1:hover h2{
+    opacity: 0;
+}
+
+.project3{
+    background-image: url(/Image/hal-gatewood-tZc3vjPCk-Q-unsplash.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin: auto;
+    height: 60%;
+    padding: 50px;
+    margin-right: 10px;
+}
+
+.project3 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.project3:hover .project2-info{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.project3:hover h2{
+    opacity: 0;
+}
+
+.project2{
+    background-image: url(/Image/SneULxsh.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin: auto;
+    height: 60%;
+    padding: 50px;
+    margin-right: 10px;
+}
+
+.project2-info{
+    width:100%;
+    margin: auto;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.project2-info p{
+    padding-bottom: 30px;
+}
+
+.project2-info i{
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.project2-info a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: background 0.5s;
+}
+
+.project2-info a:hover{
+    background-color: grey;
+    color: white;
+}
+
+.project2:hover .project2-info{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.project2:hover h2{
+    opacity: 0;
+}
+
+.view-info2{
+    display: grid;
+    justify-content: center;
+}
+
+.mailing-section{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.mailing-section h3{
+    font-size: 40px;
+}
+
+.mailing-section a{
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: background 0.5s;
+}
+
+.mailing-section a:hover{
+    background: grey;
+    color: white;
+}
+
+.social-button{
+    display: grid;
+}
+
+.social-button a{
+    color: black;
+    padding: 10px;
+    transition: text-shadow 0.5s;
+}
+
+.social-button a:hover{
+    text-shadow: 2px 2px 2px #fff; 
+}
+
+@media screen and (max-width: 1024px){
+    .main-body{
+        transform: translateY(-2%);
+    }
+
+    #project-page{
+        display: grid;
+        align-items: center;
+    }
+
+    .social-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-showcase{
+        width: 70%;
+        margin: auto;
+    }
+
+    .project1, .project2, .project3{
+        background: #FFFFFF;
+        background: -webkit-linear-gradient(top left, #FFFFFF, #A4A4A4);
+        background: -moz-linear-gradient(top left, #FFFFFF, #A4A4A4);
+        background: linear-gradient(to bottom right, #FFFFFF, #A4A4A4);
+    }
+
+    .mailing-section{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .header-nav{
+        height: 5%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .header-nav{
+        border: none;
+    }
+    .header-nav a{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-body{
+        transform: translateY(10%);
+        width: 100vw;
+    }
+
+    .header-nav{
+        border: none;
+    }
+
+    .project-showcase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .main-body{
+        transform: translateY(-2%);
+    }
+
+    .about-me{
+        padding: 20px;
+    }
+    .about-me h1{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .about-me p{
+        margin: 0;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .language{
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .language span{
+       width: 30%;
+       margin: 0 10px 0 10px;
+    }
+    
+    .project-showcase{
+        display: grid;
+        text-align: center;
+        height: 50%;
+        margin: auto;
+        padding: 0px;
+    }
+    .project-showcase div{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        transform: translateY(-70%);
+    }
+
+    .project-showcase div p{
+        transform: translateY(-80%);
+    }
+
+    
+
+    .view-info{
+        margin-top: -20px;
+    }
+
+    .mailing-section{
+        margin: 0;
+    }
+
+    .mailing-section h3{
+        font-size: 20px;
+    }
+
+    .mailing-section i{
+        font-size: 20px;
+    }
+
+    #project-page{
+        padding: 70px;
+    }
+
+
+    .view-info2{
+        display:grid;
+        grid-row-gap: 5px;
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    .project-showcase{
+        padding: 0 70px 70px 70px;
+        transform: translateY(-10%);
+    }
+
+    .project-showcase div{
+        height: 50%;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-height: 568px){
+    .project-showcase{
+        margin: 200px 100px 100px 100px;
+    }
+
+    .social-button{
+        transform: translateY(400%);
+    }
+}
+
